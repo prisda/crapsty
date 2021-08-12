@@ -1,3 +1,19 @@
+.w-embed-youtubevideo {
+  width: 100%;
+  position: relative;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.w-embed-youtubevideo:empty {
+  min-height: 75px;
+  padding-bottom: 56.25%;
+}
+
 .sticky-nav {
   position: -webkit-sticky;
   position: sticky;
@@ -273,7 +289,7 @@
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(61%, transparent), color-stop(92%, #2b463c)), url('../images/mountain-crapsty.png');
   background-image: linear-gradient(180deg, transparent 61%, #2b463c 92%), url('../images/mountain-crapsty.png');
   background-position: 0px 0px, 50% 100%;
-  background-size: auto, 90%;
+  background-size: auto, cover;
   background-repeat: repeat, no-repeat;
   background-attachment: scroll, scroll;
 }
@@ -551,7 +567,7 @@
 
 .container-5 {
   position: relative;
-  padding-bottom: 550px;
+  padding-bottom: 530px;
   background-image: none;
 }
 
@@ -572,7 +588,7 @@
 .div-block-2 {
   position: relative;
   display: block;
-  margin-top: -99px;
+  margin-top: -105px;
   margin-bottom: -7px;
   padding-bottom: 8px;
   -webkit-box-pack: center;
@@ -583,7 +599,7 @@
 }
 
 .my-btn-mint {
-  margin-top: 59px;
+  margin-top: 21px;
   margin-bottom: 14px;
   padding: 25px;
   border: 3px solid #688f4e;
@@ -736,12 +752,19 @@
 }
 
 .paragraph-3 {
+  display: block;
   margin-top: 1px;
   margin-bottom: 0px;
-  margin-left: -56px;
-  padding-top: 24px;
-  padding-right: 29px;
+  padding-right: 0px;
   padding-left: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   font-family: 'Roboto Mono', sans-serif;
   color: #0c2430;
   font-size: 18px;
@@ -778,6 +801,13 @@
   text-align: center;
 }
 
+.paragraph-3.mobile {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding-top: 9px;
+  padding-bottom: 0px;
+}
+
 .section-8 {
   background-color: #b1d182;
 }
@@ -792,7 +822,7 @@
 }
 
 .my-roadmap-topic {
-  margin-top: 0px;
+  margin-top: 8px;
   margin-bottom: 20px;
   font-family: 'Roboto Mono', sans-serif;
   color: #fff;
@@ -1338,6 +1368,10 @@
   bottom: auto;
 }
 
+.image-30 {
+  margin-left: 18px;
+}
+
 .column-17 {
   margin-top: -56px;
 }
@@ -1532,6 +1566,11 @@
   color: #fff;
 }
 
+.image-34 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .image-35 {
   position: relative;
   top: 42px;
@@ -1555,6 +1594,8 @@
 .image-37 {
   position: relative;
   top: 20px;
+  margin-left: 23px;
+  padding-left: 0px;
   float: none;
   clear: none;
   text-align: center;
@@ -1576,6 +1617,7 @@
 }
 
 .heading-9 {
+  margin-top: 73px;
   color: #fff;
   text-align: center;
 }
@@ -1586,6 +1628,7 @@
 }
 
 .text-block-14 {
+  margin-top: 128px;
   color: #fff;
   text-align: center;
 }
@@ -1622,6 +1665,14 @@
 .grid-7 {
   -ms-grid-columns: 1fr 1fr 1fr minmax(200px, 0.75fr);
   grid-template-columns: 1fr 1fr 1fr minmax(200px, 0.75fr);
+}
+
+.image-38 {
+  position: absolute;
+  left: 0%;
+  top: 56%;
+  right: auto;
+  bottom: auto;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1730,6 +1781,12 @@
     background-size: auto;
   }
 
+  .image-23 {
+    margin-left: -103px;
+    padding-top: 6px;
+    padding-left: 0px;
+  }
+
   .image-24 {
     left: -15%;
     top: -5%;
@@ -1789,10 +1846,12 @@
   }
 
   .image-23 {
-    margin-top: 188px;
-    margin-left: -129px;
-    padding-top: 11px;
-    padding-bottom: 0px;
+    margin-top: 170px;
+    margin-bottom: 80px;
+    margin-left: -169px;
+    padding-top: 9px;
+    padding-bottom: 41px;
+    padding-left: 0px;
   }
 
   .image-26 {
@@ -1816,7 +1875,7 @@
   }
 
   .section-3 {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 
   .text-block {
@@ -1833,8 +1892,12 @@
 
   .my-btn-mint {
     display: block;
-    margin: 57px 330px 25px 312px;
-    padding: 30px 30px 30px 29px;
+    width: 350px;
+    height: 80px;
+    min-height: 90px;
+    min-width: 300px;
+    margin: 57px 280px 25px;
+    padding: 30px 35px;
     float: none;
     clear: none;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #b1d182), color-stop(57%, #52a369));
@@ -1855,8 +1918,8 @@
   }
 
   .paragraph-3 {
-    margin-top: 61px;
     margin-bottom: 33px;
+    margin-left: auto;
     padding-top: 0px;
     font-size: 22px;
   }
@@ -1896,9 +1959,9 @@
 
   .image-23 {
     max-width: 120%;
-    margin-top: 250px;
+    margin-top: 233px;
     margin-bottom: 6px;
-    margin-left: -100px;
+    margin-left: -172px;
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
@@ -1937,6 +2000,14 @@
 
   .section-13 {
     margin-top: -21px;
+  }
+
+  .column-21 {
+    padding-left: 0px;
+  }
+
+  .container-14 {
+    padding-bottom: 42px;
   }
 }
 
@@ -2221,6 +2292,11 @@
     padding-bottom: 350px;
   }
 
+  .heading-3 {
+    margin-right: auto;
+    margin-left: 25px;
+  }
+
   .heading-3.white {
     right: 37px;
   }
@@ -2343,6 +2419,10 @@
     right: -58%;
   }
 
+  .faq-head {
+    margin-left: 55px;
+  }
+
   .menu-button {
     padding-right: 0px;
     line-height: 0px;
@@ -2365,6 +2445,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+  }
+
+  .image-38 {
+    margin-top: -54px;
   }
 }
 
@@ -2487,6 +2571,11 @@
     padding-bottom: 220px;
   }
 
+  .text-block {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .text-block-2 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -2506,7 +2595,13 @@
   }
 
   .heading-6 {
-    margin-left: 10px;
+    min-height: 0px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 19px;
+    padding-bottom: 0px;
+    -webkit-column-count: auto;
+    column-count: auto;
   }
 
   .paragraph-3 {
@@ -2627,7 +2722,14 @@
   }
 
   .div-block-18 {
-    margin-left: -87px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
   }
 
   .image-17 {
@@ -2658,7 +2760,7 @@
     margin-top: 35px;
     margin-bottom: -146px;
     margin-left: -135px;
-    padding: 43px 79px 0px 68px;
+    padding: 0px 79px 0px 92px;
     -o-object-fit: fill;
     object-fit: fill;
   }
@@ -2714,6 +2816,10 @@
     margin-bottom: 33px;
     padding-right: 0px;
     padding-left: 34px;
+  }
+
+  .faq-head {
+    margin-left: 60px;
   }
 
   .button {
